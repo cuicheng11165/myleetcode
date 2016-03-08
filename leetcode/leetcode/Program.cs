@@ -9,7 +9,7 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var run = new P4MedianOfTwoSortedArrays();
+            var run = new P5LongestPalindromicSubstring();
             run.Run();
         }
     }

@@ -45,6 +45,7 @@
     <Compile Include="P2AddTwoNumbers.cs" />
     <Compile Include="P3LongestSubStringWithoutRepeatingCharacters.cs" />
     <Compile Include="P4MedianOfTwoSortedArrays.cs" />
+    <Compile Include="P5LongestPalindromicSubstring.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
