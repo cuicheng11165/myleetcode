@@ -10,10 +10,9 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var run = new P6ZigZag();
-            var result = run.Convert("ABCDE", 3);
+            var run = new P7ReverseInteger();
+            var result = run.Reverse1(-2147483648);
 
-            Debug.Assert(result == "ACB");
 
         }
     }
