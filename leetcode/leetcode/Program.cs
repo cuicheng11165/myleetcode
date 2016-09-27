@@ -10,8 +10,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var run = new P7ReverseInteger();
-            var result = run.Reverse1(-2147483648);
+            var run = new P8StringToInt();
+            var result = run.MyAtoi("2147483648");
 
 
         }
