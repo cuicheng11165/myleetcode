@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="P10RegexMatch.cs" />
     <Compile Include="P1TwoSum.cs" />
     <Compile Include="P2AddTwoNumbers.cs" />
     <Compile Include="P3LongestSubStringWithoutRepeatingCharacters.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="P6ZigZag.cs" />
     <Compile Include="P8StringToInt.cs" />
     <Compile Include="P7ReverseInteger.cs" />
+    <Compile Include="P9IsPalindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,8 +10,8 @@ namespace leetcode
     {
         static void Main(string[] args)
         {
-            var run = new P8StringToInt();
-            var result = run.MyAtoi("2147483648");
+            var run = new P10RegexMatch();
+            var result = run.IsMatch("abcde", "a*b*c*d*ef*");
 
 
         }
