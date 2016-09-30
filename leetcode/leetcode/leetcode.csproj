@@ -44,6 +44,8 @@
     <Compile Include="P10RegexMatch.cs" />
     <Compile Include="P11ContainMostWater.cs" />
     <Compile Include="P14CommonPrefixString.cs" />
+    <Compile Include="P16ThreeSumClosest.cs" />
+    <Compile Include="P18FourSum.cs" />
     <Compile Include="P15SumZero.cs" />
     <Compile Include="P1TwoSum.cs" />
     <Compile Include="P2AddTwoNumbers.cs" />
