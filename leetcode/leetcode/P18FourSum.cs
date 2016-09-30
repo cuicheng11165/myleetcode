@@ -7,55 +7,63 @@ namespace leetcode
 {
     class P18FourSum
     {
-        public IList<IList<int>> ThreeSum(int[] nums, int target)
+        public IList<IList<int>> FourSum(int[] nums, int target)
         {
-            IList<IList<int>> lists = new List<IList<int>>();
-            if (nums.Length < 3)
-            {
-                return lists;
-            }
+            Array.Sort(nums);
 
-            for (int i = 0; i < nums.Length; i++)
+            List<IList<int>> result = new List<IList<int>>();
+
+            for (int i = 0; i < nums.Length - 3; i++)
             {
                 if (i > 0 && nums[i] == nums[i - 1])
                 {
                     continue;
                 }
-                var currentSum = target - nums[i];//
-
-                int left = i + 1;
-                int right = nums.Length - 1;
-                while (left < right)
+                for (int j = i + 1; j < nums.Length - 2; j++)
                 {
-                    if (nums[left] + nums[right] > currentSum)
+                    if (j > i + 1 && nums[j] == nums[j - 1])
                     {
-                        right--;
+                        continue;
                     }
-                    else if (nums[left] + nums[right] < currentSum)
+                    int left = j + 1;
+                    int right = nums.Length - 1;
+                    while (left < right)
                     {
-                        left++;
-                    }
-                    else
-                    {
-                        lists.Add(new List<int> { nums[i], nums[left], nums[right] });
-                        right--;
-                        left++;
-
-                        while (nums[right] == nums[right + 1] && left < right)
-                        {//当前元素和前一个相同就跳过，避免重复
-                            right--;
-                        }
-                        while (nums[left] == nums[left - 1] && left < right)
-                        {//当前元素和前一个相同就跳过，避免重复
+                        if (nums[i] + nums[j] + nums[left] + nums[right] < target)
+                        {
                             left++;
+                            while (nums[left] == nums[left - 1] && left < right)
+                            {
+                                left++;
+                            }
+                        }
+                        else if (nums[i] + nums[j] + nums[left] + nums[right] > target)
+                        {
+                            right--;
+                            while (nums[right] == nums[right + 1] && left < right)
+                            {
+                                right--;
+                            }
+                        }
+                        else
+                        {
+                            result.Add(new List<int> { nums[i], nums[j], nums[left], nums[right] });
+                            left++;
+                            right--;
+                            while (nums[left] == nums[left - 1] && left < right)
+                            {
+                                left++;
+                            }
+                            while (nums[right] == nums[right + 1] && left < right)
+                            {
+                                right--;
+                            }
                         }
                     }
                 }
             }
-
-            return lists;
+            return result;
         }
 
-      
     }
 }

@@ -45,9 +45,12 @@
     <Compile Include="P11ContainMostWater.cs" />
     <Compile Include="P14CommonPrefixString.cs" />
     <Compile Include="P16ThreeSumClosest.cs" />
+    <Compile Include="P17LetterCombination.cs" />
     <Compile Include="P18FourSum.cs" />
     <Compile Include="P15SumZero.cs" />
+    <Compile Include="P19DeleteNthNode.cs" />
     <Compile Include="P1TwoSum.cs" />
+    <Compile Include="P20ValidParentheses.cs" />
     <Compile Include="P2AddTwoNumbers.cs" />
     <Compile Include="P3LongestSubStringWithoutRepeatingCharacters.cs" />
     <Compile Include="P4MedianOfTwoSortedArrays.cs" />
